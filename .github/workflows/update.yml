@@ -1,4 +1,4 @@
-tryname: Update Prices
+name: Update Prices
 
 on:
   schedule:
@@ -31,4 +31,3 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "Daily price update"
           git push
-          git add prices.json
