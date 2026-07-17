@@ -14,7 +14,7 @@ headers = {
     "Upgrade-Insecure-Requests": "1"
 }
 
-response = requests.get(URL, headers=headers, timeout=30)
+response = requests.get(URL, headers=headers, timeout=120)
 
 print("Status:", response.status_code)
 print("Length:", len(response.text))
