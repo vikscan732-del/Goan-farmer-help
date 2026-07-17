@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 
 url = "https://goabagayatdar.com/pricing/"
 
@@ -8,23 +7,16 @@ headers = {
     "User-Agent": "Mozilla/5.0"
 }
 
-r = requests.get(url, headers=headers, timeout=30)
+r = requests.get(url, headers=headers)
+
+print("Status:", r.status_code)
+print("Length:", len(r.text))
 
 soup = BeautifulSoup(r.text, "lxml")
 
-table = soup.find("table")
+tables = soup.find_all("table")
+print("Tables found:", len(tables))
 
-data = []
-
-if table:
-    rows = table.find_all("tr")
-
-    for row in rows:
-        cols = [td.get_text(" ", strip=True) for td in row.find_all(["th","td"])]
-        if cols:
-            data.append(cols)
-
-with open("prices.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
-
-print(data)
+for i, table in enumerate(tables):
+    print("Table", i)
+    print(table.get_text(" ", strip=True)[:500])
