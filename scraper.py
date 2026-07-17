@@ -1,22 +1,41 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
-url = "https://goabagayatdar.com/pricing/"
+URL = "https://goabagayatdar.com/pricing/"
 
 headers = {
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0 (Linux; Android 16; I2219 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://goabagayatdar.com/",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Upgrade-Insecure-Requests": "1"
 }
 
-r = requests.get(url, headers=headers)
+response = requests.get(URL, headers=headers, timeout=30)
 
-print("Status:", r.status_code)
-print("Length:", len(r.text))
+print("Status:", response.status_code)
+print("Length:", len(response.text))
 
-soup = BeautifulSoup(r.text, "lxml")
+soup = BeautifulSoup(response.text, "html.parser")
 
-tables = soup.find_all("table")
-print("Tables found:", len(tables))
+table = soup.find("table")
 
-for i, table in enumerate(tables):
-    print("Table", i)
-    print(table.get_text(" ", strip=True)[:500])
+data = []
+
+if table:
+    rows = table.find_all("tr")
+
+    for row in rows:
+        cols = row.find_all(["th", "td"])
+        if cols:
+            data.append([c.get_text(strip=True) for c in cols])
+
+print("Rows found:", len(data))
+
+with open("prices.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
+
+print("prices.json created successfully!")
