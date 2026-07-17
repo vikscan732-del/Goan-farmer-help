@@ -30,11 +30,12 @@ if table:
 
     for row in rows:
         cols = row.find_all(["th", "td"])
+
         if len(cols) >= 2:
-    data.append({
-        "name": cols[0].get_text(strip=True),
-        "price": cols[1].get_text(strip=True)
-    })
+            data.append({
+                "name": cols[0].get_text(strip=True),
+                "price": cols[1].get_text(strip=True)
+            })
 
 print("Rows found:", len(data))
 
