@@ -76,11 +76,29 @@ print("prices.json created successfully!")
 # -----------------------------
 # Upload to Firestore
 # -----------------------------
+from firebase_admin import firestore
+
 for item in data:
-    db.collection("products").add({
-        "name": item["name"],
-        "price": item["price"],
-        "updated": firestore.SERVER_TIMESTAMP
-    })
+
+    docs = db.collection("products") \
+        .where("name", "==", item["name"]) \
+        .limit(1) \
+        .stream()
+
+    doc_found = False
+
+    for d in docs:
+        d.reference.update({
+            "price": item["price"],
+            "updated": firestore.SERVER_TIMESTAMP
+        })
+        doc_found = True
+
+    if not doc_found:
+        db.collection("products").add({
+            "name": item["name"],
+            "price": item["price"],
+            "updated": firestore.SERVER_TIMESTAMP
+        })
 
 print("Firestore updated successfully!")
