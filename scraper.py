@@ -1,6 +1,23 @@
-import requests
-from bs4 import BeautifulSoup
+import firebase_admin
+from firebase_admin import credentials, firestore
 import json
+import os
+
+service_account = json.loads(os.environ["FIREBASE_SERVICE_ACCOUNT"])
+
+cred = credentials.Certificate(service_account)
+firebase_admin.initialize_app(cred)
+
+db = firestore.client()
+
+for item in data:
+    db.collection("products").document(item["name"]).set({
+        "name": item["name"],
+        "price": item["price"],
+        "updated": firestore.SERVER_TIMESTAMP
+    }, merge=True)
+
+print("Firestore updated successfully!")
 
 URL = "https://goabagayatdar.com/pricing/"
 
