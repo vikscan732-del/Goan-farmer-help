@@ -77,14 +77,10 @@ print("prices.json created successfully!")
 # Upload to Firestore
 # -----------------------------
 for item in data:
-
-    db.collection("products").document(item["name"]).set(
-        {
-            "name": item["name"],
-            "price": item["price"],
-            "updated": firestore.SERVER_TIMESTAMP
-        },
-        merge=True
-    )
+    db.collection("products").add({
+        "name": item["name"],
+        "price": item["price"],
+        "updated": firestore.SERVER_TIMESTAMP
+    })
 
 print("Firestore updated successfully!")
