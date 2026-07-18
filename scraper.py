@@ -78,13 +78,6 @@ with open("prices.json", "w", encoding="utf-8") as f:
 print("prices.json updated.")
 
 
-# -----------------------------
-# Save JSON
-# -----------------------------
-with open("prices.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
-
-print("prices.json created successfully!")
 
 # -----------------------------
 # Upload with History
