@@ -1,40 +1,43 @@
-import firebase_admin
-from firebase_admin import credentials, firestore
+import requests
+from bs4 import BeautifulSoup
 import json
 import os
 
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+# -----------------------------
+# Firebase Setup
+# -----------------------------
 service_account = json.loads(os.environ["FIREBASE_SERVICE_ACCOUNT"])
 
 cred = credentials.Certificate(service_account)
-firebase_admin.initialize_app(cred)
+
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-for item in data:
-    db.collection("products").document(item["name"]).set({
-        "name": item["name"],
-        "price": item["price"],
-        "updated": firestore.SERVER_TIMESTAMP
-    }, merge=True)
-
-print("Firestore updated successfully!")
-
+# -----------------------------
+# Website to Scrape
+# -----------------------------
 URL = "https://goabagayatdar.com/pricing/"
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Linux; Android 16; I2219 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0 Mobile Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://goabagayatdar.com/",
-    "Connection": "keep-alive",
-    "Cache-Control": "max-age=0",
-    "Upgrade-Insecure-Requests": "1"
+    "Referer": "https://goabagayatdar.com/"
 }
 
+# -----------------------------
+# Download Page
+# -----------------------------
 response = requests.get(URL, headers=headers, timeout=120)
 
 print("Status:", response.status_code)
-print("Length:", len(response.text))
+
+response.raise_for_status()
 
 soup = BeautifulSoup(response.text, "html.parser")
 
@@ -49,14 +52,39 @@ if table:
         cols = row.find_all(["th", "td"])
 
         if len(cols) >= 2:
-            data.append({
-                "name": cols[0].get_text(strip=True),
-                "price": cols[1].get_text(strip=True)
-            })
 
-print("Rows found:", len(data))
+            name = cols[0].get_text(strip=True)
+            price = cols[1].get_text(strip=True)
 
+            item = {
+                "name": name,
+                "price": price
+            }
+
+            data.append(item)
+
+print("Rows Found:", len(data))
+
+# -----------------------------
+# Save JSON
+# -----------------------------
 with open("prices.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=4)
+    json.dump(data, f, indent=4, ensure_ascii=False)
 
 print("prices.json created successfully!")
+
+# -----------------------------
+# Upload to Firestore
+# -----------------------------
+for item in data:
+
+    db.collection("products").document(item["name"]).set(
+        {
+            "name": item["name"],
+            "price": item["price"],
+            "updated": firestore.SERVER_TIMESTAMP
+        },
+        merge=True
+    )
+
+print("Firestore updated successfully!")
