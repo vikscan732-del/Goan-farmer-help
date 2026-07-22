@@ -1,74 +1,38 @@
 [
     {
         "name": "Supari Old  / सुपारी जुनी",
-        "price": 417.0
-    },
-    {
-        "name": "Supari New / सुपारी नवी",
-        "price": 417.0
+        "price": 414.0
     },
     {
         "name": "Supari Raas Old / सुपारी रास जुनी",
-        "price": 409.0
-    },
-    {
-        "name": "Supari Raas New / सुपारी रास नवी",
-        "price": 409.0
+        "price": 404.0
     },
     {
         "name": "Safed Khoka Old / सफेद खोका जुना",
-        "price": 373.0
-    },
-    {
-        "name": "Safed Khoka New / सफेद खोका नवा",
-        "price": 373.0
+        "price": 368.0
     },
     {
         "name": "Lal Khoka Old / लाल खोका जुना",
-        "price": 363.0
-    },
-    {
-        "name": "Lal Khoka New / लाल खोका नवा",
-        "price": 363.0
+        "price": 358.0
     },
     {
         "name": "Vench Old  / वेच जुना",
-        "price": 305.0
-    },
-    {
-        "name": "Vench New  / वेच नवा",
-        "price": 305.0
+        "price": 302.0
     },
     {
         "name": "Kharad Old / खरड जुना",
-        "price": 305.0
-    },
-    {
-        "name": "Kharad New / खरड नवा",
-        "price": 305.0
+        "price": 302.0
     },
     {
         "name": "Tukada Old / तुकडा जुना",
         "price": 334.0
     },
     {
-        "name": "Tukada New / तुकडा नवा",
-        "price": 334.0
-    },
-    {
         "name": "Bad Vench Old / बादवेच जुना",
-        "price": 210.0
-    },
-    {
-        "name": "Bad Vench New / बादवेच नवा",
-        "price": 210.0
+        "price": 208.0
     },
     {
         "name": "Bad Vench Chura (Old) / बादवेच (चुरा) जुना",
-        "price": 106.0
-    },
-    {
-        "name": "Bad Vench Chura (New) / बादवेच (चुरा)  नवा",
         "price": 106.0
     },
     {
