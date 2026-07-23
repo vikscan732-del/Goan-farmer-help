@@ -1,3 +1,18 @@
+print("Step 1: Starting...")
+import json
+import os
+import instaloader
+
+print("Step 2: Instaloader imported")
+
+L = instaloader.Instaloader()
+
+print("Step 3: Connecting to Instagram")
+
+profile = instaloader.Profile.from_username(L.context, "gshclgoa")
+
+print("Step 4: Connected")
+
 import json
 import os
 import instaloader
