@@ -1,4 +1,4 @@
 requests
 beautifulsoup4
 firebase-admin
-instaloader==4.14.2
+lxml
