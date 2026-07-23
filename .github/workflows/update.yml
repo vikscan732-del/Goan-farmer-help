@@ -29,10 +29,10 @@ jobs:
       - name: Install Playwright Browser
         run: playwright install chromium
 
-      - name: Run Bagayatdar Scraper
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        run: python scraper.py
+     # - name: Run Bagayatdar Scraper
+      #  env:
+        #  FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      #  run: python scraper.py
 
       - name: Run Instagram Test
         run: python dolphin_test.py
