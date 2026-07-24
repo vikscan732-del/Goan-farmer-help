@@ -40,7 +40,7 @@ jobs:
 
       # -------- Instagram GSHCL Scraper --------
       - name: Run Instagram Scraper
-        run: python instagram_scraper.py
+        run: python test_api.py
 
       - name: Commit Updated Files
         run: |
