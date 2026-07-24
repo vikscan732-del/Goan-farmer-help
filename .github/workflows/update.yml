@@ -26,21 +26,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Install OCR (needed for Instagram price image)
       - name: Install Tesseract OCR
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr
 
-      # -------- Goa Bagayatdar (Disabled for now) --------
-      # - name: Run Goa Bagayatdar Scraper
-      #   env:
-      #     FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-      #   run: python scraper.py
+      # -------- Goa Bagayatdar --------
+      - name: Run Goa Bagayatdar Scraper
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: python scraper.py
 
-      # -------- Instagram GSHCL Scraper --------
-      - name: Run Instagram Scraper
+      # -------- Instagram GSHCL --------
+      - name: Download Latest Price Image
         run: python test_api.py
+
+      - name: Extract Prices from Image
+        run: python ocr_prices.py
 
       - name: Commit Updated Files
         run: |
