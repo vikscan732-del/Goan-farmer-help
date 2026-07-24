@@ -1,62 +1,66 @@
-[
-  {
-    "name": "Bhendi",
-    "emoji": "🌿",
-    "price": 38,
-    "unit": "kg"
-  },
-  {
-    "name": "Cabbage",
-    "emoji": "🥬",
-    "price": 36,
-    "unit": "kg"
-  },
-  {
-    "name": "Carrot",
-    "emoji": "🥕",
-    "price": 49,
-    "unit": "kg"
-  },
-  {
-    "name": "Cauliflower",
-    "emoji": "🥦",
-    "price": 35,
-    "unit": "kg"
-  },
-  {
-    "name": "Cluster Beans",
-    "emoji": "🫛",
-    "price": 52,
-    "unit": "kg"
-  },
-  {
-    "name": "French Beans",
-    "emoji": "🫛",
-    "price": 50,
-    "unit": "kg"
-  },
-  {
-    "name": "Chilli",
-    "emoji": "🌶️",
-    "price": 52,
-    "unit": "kg"
-  },
-  {
-    "name": "Onion",
-    "emoji": "🧅",
-    "price": 35,
-    "unit": "kg"
-  },
-  {
-    "name": "Potato",
-    "emoji": "🥔",
-    "price": 27,
-    "unit": "kg"
-  },
-  {
-    "name": "Tomato",
-    "emoji": "🍅",
-    "price": 35,
-    "unit": "kg"
-  }
-]
+{
+  "priceDate": "24 Jul 2026",
+  "updatedAt": "12:48 PM",
+  "vegetables": [
+    {
+      "name": "Bhendi",
+      "emoji": "🌿",
+      "price": 38,
+      "unit": "kg"
+    },
+    {
+      "name": "Cabbage",
+      "emoji": "🥬",
+      "price": 36,
+      "unit": "kg"
+    },
+    {
+      "name": "Carrot",
+      "emoji": "🥕",
+      "price": 49,
+      "unit": "kg"
+    },
+    {
+      "name": "Cauliflower",
+      "emoji": "🥦",
+      "price": 35,
+      "unit": "kg"
+    },
+    {
+      "name": "Cluster Beans",
+      "emoji": "🫛",
+      "price": 52,
+      "unit": "kg"
+    },
+    {
+      "name": "French Beans",
+      "emoji": "🫛",
+      "price": 50,
+      "unit": "kg"
+    },
+    {
+      "name": "Chilli",
+      "emoji": "🌶️",
+      "price": 52,
+      "unit": "kg"
+    },
+    {
+      "name": "Onion",
+      "emoji": "🧅",
+      "price": 35,
+      "unit": "kg"
+    },
+    {
+      "name": "Potato",
+      "emoji": "🥔",
+      "price": 27,
+      "unit": "kg"
+    },
+    {
+      "name": "Tomato",
+      "emoji": "🍅",
+      "price": 35,
+      "unit": "kg"
+    }
+  ]
+}
