@@ -102,10 +102,20 @@ for line in text.splitlines():
         "unit": "kg"
     })
 
+print("\from datetime import datetime
+
+now = datetime.now()
+
+output = {
+    "priceDate": now.strftime("%d %b %Y"),
+    "updatedAt": now.strftime("%I:%M %p"),
+    "vegetables": prices
+}
+
 print("\n========== FINAL JSON ==========")
-print(json.dumps(prices, indent=2, ensure_ascii=False))
+print(json.dumps(output, indent=2, ensure_ascii=False))
 
 with open("prices.json", "w", encoding="utf-8") as f:
-    json.dump(prices, f, indent=2, ensure_ascii=False)
+    json.dump(output, f, indent=2, ensure_ascii=False)
 
 print(f"\n✅ Saved {len(prices)} vegetables to prices.json")
