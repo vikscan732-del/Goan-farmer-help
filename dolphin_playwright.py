@@ -26,14 +26,20 @@ with sync_playwright() as p:
     )
 
     page.goto(
-        "https://anonyig.com/en/instagram-profile-viewer/",
-        wait_until="networkidle"
-    )
+    "https://anonyig.com/en/instagram-profile-viewer/",
+    wait_until="networkidle"
+)
 
-    page.locator("input").first.fill("gshclgoa")
+page.locator("input").first.fill("gshclgoa")
 
-    page.locator("button").first.click()
+print("Buttons found:")
 
-    page.wait_for_timeout(15000)
+buttons = page.locator("button")
 
-    browser.close()
+for i in range(buttons.count()):
+    try:
+        print(i, buttons.nth(i).inner_text())
+    except:
+        print(i, "No text")
+
+browser.close()
