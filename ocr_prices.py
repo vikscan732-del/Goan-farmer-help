@@ -1,5 +1,6 @@
 import re
 import json
+from datetime import datetime
 from PIL import Image
 import pytesseract
 
@@ -102,8 +103,6 @@ for line in text.splitlines():
         "unit": "kg"
     })
 
-print("\from datetime import datetime
-
 now = datetime.now()
 
 output = {
@@ -119,3 +118,4 @@ with open("prices.json", "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
 print(f"\n✅ Saved {len(prices)} vegetables to prices.json")
+
