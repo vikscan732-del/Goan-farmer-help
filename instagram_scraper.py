@@ -7,22 +7,19 @@ payload = {
     "data": {
         "endpoint": "/v1.2/posts",
         "params": {
-            "username_or_id_or_url": "gshclgoa",
-            "count": 1
+            "username_or_id_or_url": "gshclgoa"
         }
     }
 }
 
 headers = {
-    "Content-Type": "application/json"
+    "Content-Type": "application/json; charset=utf-8",
+    "User-Agent": "okhttp/4.10.0"
 }
-
-print("Fetching latest post...")
 
 response = requests.post(url, json=payload, headers=headers, timeout=30)
 
 print("Status:", response.status_code)
-print("Response:")
 print(response.text)
 
 if response.status_code == 200:
@@ -30,4 +27,4 @@ if response.status_code == 200:
         json.dump(response.json(), f, indent=2, ensure_ascii=False)
     print("Saved latest_post.json")
 else:
-    raise SystemExit("API request failed.")
+    raise Exception("API request failed")
