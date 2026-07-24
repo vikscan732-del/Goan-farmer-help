@@ -80,6 +80,23 @@ try:
         print("\nCould not parse JSON.")
         traceback.print_exc()
 
+image_url = latest["image_versions"]["items"][0]["url"]
+
+print("\nImage URL:")
+print(image_url)
+
+print("\nDownloading image...")
+
+img = requests.get(image_url, stream=True)
+img.raise_for_status()
+
+with open("latest_price.jpg", "wb") as f:
+    for chunk in img.iter_content(8192):
+        if chunk:
+            f.write(chunk)
+
+print("✅ Image saved as latest_price.jpg")
+
 except Exception:
     print("\nRequest Failed!")
     traceback.print_exc()
