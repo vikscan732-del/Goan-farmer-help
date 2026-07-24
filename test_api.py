@@ -15,7 +15,6 @@ payload = {
 
 headers = {
     "Content-Type": "application/json"
-    # Intentionally NOT sending Firebase-Instance-ID-Token
 }
 
 print("=" * 60)
@@ -33,70 +32,42 @@ try:
     print(f"\nStatus Code : {response.status_code}")
     print(f"Reason      : {response.reason}")
 
-    print("\n========== RESPONSE HEADERS ==========")
-    for k, v in response.headers.items():
-        print(f"{k}: {v}")
+    data = response.json()
 
-    print("\n========== RESPONSE TEXT (First 1000 chars) ==========")
-    print(response.text[:1000])
+    with open("response.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print("\n========== TRYING JSON ==========")
+    items = data.get("result", {}).get("data", {}).get("items", [])
 
-    try:
-        data = response.json()
+    print(f"\nPosts Found: {len(items)}")
 
-        print("✓ JSON parsed successfully")
+    if not items:
+        raise Exception("No posts found.")
 
-        with open("response.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+    latest = items[0]
 
-        print("Saved response.json")
+    print("\nLatest Post ID:")
+    print(latest.get("id"))
 
-        items = (
-            data.get("result", {})
-                .get("data", {})
-                .get("items", [])
-        )
+    print("\nInstagram Code:")
+    print(latest.get("code"))
 
-        print(f"\nPosts Found: {len(items)}")
+    image_url = latest["image_versions"]["items"][0]["url"]
 
-        if items:
-            first = items[0]
+    print("\nImage URL:")
+    print(image_url)
 
-            print("\nLatest Post ID:")
-            print(first.get("id"))
+    print("\nDownloading image...")
 
-            print("\nInstagram Code:")
-            print(first.get("code"))
+    img = requests.get(image_url, timeout=30)
+    img.raise_for_status()
 
-            try:
-                img = first["image_versions"]["items"][0]["url"]
-                print("\nImage URL:")
-                print(img)
-            except Exception:
-                print("\nNo image URL found.")
+    with open("latest_price.jpg", "wb") as f:
+        f.write(img.content)
 
-    except Exception:
-        print("\nCould not parse JSON.")
-        traceback.print_exc()
-
-image_url = latest["image_versions"]["items"][0]["url"]
-
-print("\nImage URL:")
-print(image_url)
-
-print("\nDownloading image...")
-
-img = requests.get(image_url, stream=True)
-img.raise_for_status()
-
-with open("latest_price.jpg", "wb") as f:
-    for chunk in img.iter_content(8192):
-        if chunk:
-            f.write(chunk)
-
-print("✅ Image saved as latest_price.jpg")
+    print("✅ Image saved as latest_price.jpg")
 
 except Exception:
     print("\nRequest Failed!")
     traceback.print_exc()
+    raise
