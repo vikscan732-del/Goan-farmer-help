@@ -35,7 +35,7 @@ jobs:
       #  run: python scraper.py
 
       - name: Run Instagram Test
-        run: python download_js.py
+        run: python download_app.py
 
       - name: Commit Updated Files
         run: |
