@@ -19,15 +19,15 @@ headers = {
 
 print("Fetching latest post...")
 
-response = requests.post(url, json=payload, headers=headers)
+response = requests.post(url, json=payload, headers=headers, timeout=30)
 
 print("Status:", response.status_code)
+print("Response:")
+print(response.text)
 
-response.raise_for_status()
-
-data = response.json()
-
-with open("latest_post.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
-
-print("Saved latest_post.json")
+if response.status_code == 200:
+    with open("latest_post.json", "w", encoding="utf-8") as f:
+        json.dump(response.json(), f, indent=2, ensure_ascii=False)
+    print("Saved latest_post.json")
+else:
+    raise SystemExit("API request failed.")
