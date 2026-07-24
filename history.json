@@ -18,5 +18,53 @@
       "date": "2026-07-24",
       "price": 35
     }
+  ],
+  "Cabbage": [
+    {
+      "date": "2026-07-24",
+      "price": 36
+    }
+  ],
+  "Carrot": [
+    {
+      "date": "2026-07-24",
+      "price": 49
+    }
+  ],
+  "Cauliflower": [
+    {
+      "date": "2026-07-24",
+      "price": 35
+    }
+  ],
+  "Chilli": [
+    {
+      "date": "2026-07-24",
+      "price": 52
+    }
+  ],
+  "Cluster Beans": [
+    {
+      "date": "2026-07-24",
+      "price": 52
+    }
+  ],
+  "French Beans": [
+    {
+      "date": "2026-07-24",
+      "price": 50
+    }
+  ],
+  "Onion": [
+    {
+      "date": "2026-07-24",
+      "price": 35
+    }
+  ],
+  "Potato": [
+    {
+      "date": "2026-07-24",
+      "price": 27
+    }
   ]
 }

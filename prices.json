@@ -1,6 +1,6 @@
 {
   "priceDate": "24 Jul 2026",
-  "updatedAt": "12:48 PM",
+  "updatedAt": "01:13 PM",
   "vegetables": [
     {
       "name": "Bhendi",
@@ -27,6 +27,12 @@
       "unit": "kg"
     },
     {
+      "name": "Chilli",
+      "emoji": "🌶️",
+      "price": 52,
+      "unit": "kg"
+    },
+    {
       "name": "Cluster Beans",
       "emoji": "🫛",
       "price": 52,
@@ -36,12 +42,6 @@
       "name": "French Beans",
       "emoji": "🫛",
       "price": 50,
-      "unit": "kg"
-    },
-    {
-      "name": "Chilli",
-      "emoji": "🌶️",
-      "price": 52,
       "unit": "kg"
     },
     {
