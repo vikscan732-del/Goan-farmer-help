@@ -2,7 +2,7 @@ name: Update Prices
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,21 +26,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Playwright Browser
-        run: playwright install chromium
+      # Install OCR (needed for Instagram price image)
+      - name: Install Tesseract OCR
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
 
-     # - name: Run Bagayatdar Scraper
-      #  env:
-        #  FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-      #  run: python scraper.py
+      # -------- Goa Bagayatdar (Disabled for now) --------
+      # - name: Run Goa Bagayatdar Scraper
+      #   env:
+      #     FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      #   run: python scraper.py
 
-      - name: Run Instagram Test
-        run: python download_app.py
+      # -------- Instagram GSHCL Scraper --------
+      - name: Run Instagram Scraper
+        run: python instagram_scraper.py
 
       - name: Commit Updated Files
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add .
-          git diff --cached --quiet || git commit -m "Update market data"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update market data"
+            git push
+          fi
