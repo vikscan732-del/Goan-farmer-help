@@ -1,4 +1,5 @@
 import re
+import os
 import json
 from datetime import datetime
 from PIL import Image
@@ -103,6 +104,9 @@ for line in text.splitlines():
         "unit": "kg"
     })
 
+# Sort alphabetically
+prices.sort(key=lambda x: x["name"])
+
 now = datetime.now()
 
 output = {
@@ -111,11 +115,52 @@ output = {
     "vegetables": prices
 }
 
-print("\n========== FINAL JSON ==========")
-print(json.dumps(output, indent=2, ensure_ascii=False))
+today = now.strftime("%Y-%m-%d")
 
+# Load history
+history = {}
+
+if os.path.exists("history.json"):
+    try:
+        with open("history.json", "r", encoding="utf-8") as f:
+            history = json.load(f)
+    except:
+        history = {}
+
+# Update history
+for veg in prices:
+
+    name = veg["name"]
+    price = veg["price"]
+
+    if name not in history:
+        history[name] = []
+
+    found = False
+
+    for item in history[name]:
+        if item["date"] == today:
+            item["price"] = price
+            found = True
+            break
+
+    if not found:
+        history[name].append({
+            "date": today,
+            "price": price
+        })
+
+# Save history
+with open("history.json", "w", encoding="utf-8") as f:
+    json.dump(history, f, indent=2, ensure_ascii=False)
+
+# Save today's prices
 with open("prices.json", "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print(f"\n✅ Saved {len(prices)} vegetables to prices.json")
+print("\n========== FINAL JSON ==========")
+print(json.dumps(output, indent=2, ensure_ascii=False))
 
+print(f"\n✅ Saved {len(prices)} vegetables.")
+print("✅ Updated history.json")
+print("✅ Updated prices.json")
