@@ -3,29 +3,42 @@ name: Fuel Scraper
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "30 1 * * *"
+
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r scraper/requirements.txt
 
-      - name: Run scraper
+      - name: Run Fuel Scraper
         run: |
           python scraper/fuel_scraper.py
 
-      - name: Upload debug files
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-files
-          path: debug/
+      - name: Commit Updated Data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/fuel.json
+          git add data/fuel-history.json
+
+          git diff --cached --quiet || git commit -m "Update fuel prices"
+
+          git push
