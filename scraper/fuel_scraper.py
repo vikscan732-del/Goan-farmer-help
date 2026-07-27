@@ -36,6 +36,15 @@ def scrape_fuel(url):
 
     cards = soup.find_all("div", class_="SF")
 
+print("=" * 40)
+print("URL:", url)
+print("Cards found:", len(cards))
+
+for i, card in enumerate(cards):
+    print(f"Card {i+1}:")
+    print(card.get_text(" ", strip=True))
+print("=" * 40)
+
     for card in cards:
 
         city = None
