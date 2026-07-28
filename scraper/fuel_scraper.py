@@ -18,47 +18,49 @@ URLS = {
 
 
 def get_price(text):
-    m = re.search(r"₹\s*([\d.]+)", text)
+    m = re.search(r"([\d.]+)", text)
     if m:
         return float(m.group(1))
     return None
 
 
-        cards = soup.find_all("div", class_="SF")
+def scrape_fuel(url):
+    print(f"\nDownloading: {url}")
 
-    print("=" * 40)
-    print("URL:", url)
+    r = requests.get(url, headers=HEADERS, timeout=30)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "lxml")
+
+    result = {}
+
+    cards = soup.find_all("div", class_="SF")
+
     print("Cards found:", len(cards))
 
-    for i, card in enumerate(cards):
-        print(f"Card {i+1}:")
-        print(card.get_text(" ", strip=True))
-
-    print("=" * 40)
-
     for card in cards:
-
-        city = None
-        price = None
-
         ch = card.find("div", class_="CH")
-
-        if ch:
-            a = ch.find("a")
-            if a:
-                city = a.get_text(strip=True)
-
         txt = card.find("div", class_="txtC")
 
-        if txt:
-            b = txt.find("b")
-            if b:
-                price = get_price(b.get_text())
+        if not ch or not txt:
+            continue
 
-        if city in ["Margao", "Panjim"]:
+        city_link = ch.find("a")
+        price_tag = txt.find("b")
+
+        if not city_link or not price_tag:
+            continue
+
+        city = city_link.get_text(strip=True)
+        price = get_price(price_tag.get_text())
+
+        print(city, price)
+
+        if city in ("Margao", "Panjim"):
             result[city] = price
 
     return result
+
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -71,9 +73,7 @@ fuel_data = {
     "cng": scrape_fuel(URLS["cng"])
 }
 
-fuel_file = DATA_DIR / "fuel.json"
-
-with open(fuel_file, "w", encoding="utf-8") as f:
+with open(DATA_DIR / "fuel.json", "w", encoding="utf-8") as f:
     json.dump(fuel_data, f, indent=2, ensure_ascii=False)
 
 history_file = DATA_DIR / "fuel-history.json"
@@ -84,19 +84,14 @@ if history_file.exists():
     try:
         with open(history_file, "r", encoding="utf-8") as f:
             history = json.load(f)
-    except Exception:
+    except:
         history = []
 
-today = fuel_data["updated"]
-
-history = [item for item in history if item.get("updated") != today]
+history = [x for x in history if x["updated"] != fuel_data["updated"]]
 history.append(fuel_data)
-
-history.sort(key=lambda x: x["updated"])
 
 with open(history_file, "w", encoding="utf-8") as f:
     json.dump(history, f, indent=2, ensure_ascii=False)
 
-print("✓ fuel.json created")
-print("✓ fuel-history.json updated")
-
+print("\nDone.")
+print(json.dumps(fuel_data, indent=2))
