@@ -34,14 +34,19 @@ print(silver_data)
 result = {
     "updated": datetime.now().strftime("%Y-%m-%d"),
 
+    # Gold
     "gold_24k": gold_data.get("price_gram_24k"),
     "gold_22k": gold_data.get("price_gram_22k"),
     "gold_21k": gold_data.get("price_gram_21k"),
     "gold_20k": gold_data.get("price_gram_20k"),
     "gold_18k": gold_data.get("price_gram_18k"),
 
-    "silver_per_gram": silver_data.get("price_gram"),
-    "silver_per_kg": silver_data.get("price_kg")
+    # Silver
+    "silver": (
+        silver_data.get("price_gram")
+        or silver_data.get("price_gram_24k")
+        or silver_data.get("price")
+    )
 }
 
 DATA_DIR = Path("data")
