@@ -50,5 +50,12 @@ DATA_DIR.mkdir(exist_ok=True)
 with open(DATA_DIR / "gold_silver.json", "w", encoding="utf-8") as f:
     json.dump(result, f, indent=2, ensure_ascii=False)
 
-print("Done")
+
+print("Gold API Response:")
+print(gold_data)
+
+print("\nSilver API Response:")
+print(silver_data)
+
+print("\nFinal JSON:")
 print(json.dumps(result, indent=2))
