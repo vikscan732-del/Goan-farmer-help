@@ -30,7 +30,7 @@ def scrape_fuel(url):
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
     with open("goa.html", "w", encoding="utf-8") as f:
-    f.write(r.text)
+        f.write(r.text)
 
 print("Saved goa.html")
 
