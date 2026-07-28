@@ -31,7 +31,7 @@ def scrape_fuel():
     result = {
         "petrol": {},
         "diesel": {},
-        "lpg": {},
+        "autogas": {},
         "cng": {}
     }
 
