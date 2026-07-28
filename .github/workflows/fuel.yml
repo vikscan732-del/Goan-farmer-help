@@ -31,21 +31,21 @@ jobs:
         run: |
           python scraper/fuel_scraper.py
 
-       - name: Download LPG HTML
+      - name: Download LPG HTML
         run: |
-           python scraper/lpg_scraper.py   
+          python scraper/lpg_scraper.py
 
-      - name: Upload HTML
+      - name: Upload Goa HTML
         uses: actions/upload-artifact@v4
         with:
           name: goa-html
           path: goa.html
 
-       - name: Upload LPG HTML
-         uses: actions/upload-artifact@v4
-         with:
+      - name: Upload LPG HTML
+        uses: actions/upload-artifact@v4
+        with:
           name: lpg-html
-          path: lpg.html  
+          path: lpg.html
 
       - name: Commit Updated Data
         run: |
@@ -54,7 +54,8 @@ jobs:
 
           git add data/fuel.json
           git add data/fuel-history.json
+          git add data/lpg.json || true
 
-          git diff --cached --quiet || git commit -m "Update fuel prices"
+          git diff --cached --quiet || git commit -m "Update fuel data"
 
           git push
