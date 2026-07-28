@@ -29,7 +29,7 @@ silver.raise_for_status()
 silver_data = silver.json()
 
 # Uncomment the next line if you want to see the full API response
-# print(silver_data)
+print(silver_data)
 
 result = {
     "updated": datetime.now().strftime("%Y-%m-%d"),
