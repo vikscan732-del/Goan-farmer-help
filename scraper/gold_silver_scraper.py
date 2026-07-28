@@ -1,4 +1,4 @@
-import requests
+³import requests
 import json
 from pathlib import Path
 from datetime import datetime
@@ -34,7 +34,8 @@ silver.raise_for_status()
 
 silver_data = silver.json()
 
-result["silver_999"] = silver_data.get("price_gram_999")
+result["silver_per_gram"] = silver_data.get("price_gram")
+result["silver_per_kg"] = silver_data.get("price_kg")
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
