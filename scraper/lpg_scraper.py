@@ -1,15 +1,49 @@
 import requests
+from bs4 import BeautifulSoup
+import json
+import re
+from datetime import datetime
+from pathlib import Path
 
-url = "https://www.mypetrolprice.com/4/11/Subsidised_14__2_Kg_LPG-Prices-in-Goa"
+URL = "https://www.mypetrolprice.com/4/11/Subsidised_14__2_Kg_LPG-Prices-in-Goa"
 
-headers = {
+HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-r = requests.get(url, headers=headers, timeout=30)
+def get_price(text):
+    m = re.search(r"([\d]+(?:\.\d+)?)", text)
+    if m:
+        return float(m.group(1))
+    return None
+
+r = requests.get(URL, headers=HEADERS, timeout=30)
 r.raise_for_status()
 
 with open("lpg.html", "w", encoding="utf-8") as f:
     f.write(r.text)
 
-print("lpg.html saved")
+soup = BeautifulSoup(r.text, "lxml")
+
+result = {
+    "updated": datetime.now().strftime("%Y-%m-%d"),
+    "panjim": None,
+    "average": None
+}
+
+highest = soup.find(id="BC_StateAveragePriceControl_HeigestPrice")
+average = soup.find(id="BC_StateAveragePriceControl_AvragePrice")
+
+if highest:
+    result["panjim"] = get_price(highest.get_text(" ", strip=True))
+
+if average:
+    result["average"] = get_price(average.get_text(" ", strip=True))
+
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+
+with open(DATA_DIR / "lpg.json", "w", encoding="utf-8") as f:
+    json.dump(result, f, indent=2, ensure_ascii=False)
+
+print(json.dumps(result, indent=2))
