@@ -86,9 +86,11 @@ fuel_data = {
     **scrape_fuel()
 }
 
+# Save today's prices
 with open(DATA_DIR / "fuel.json", "w", encoding="utf-8") as f:
     json.dump(fuel_data, f, indent=2, ensure_ascii=False)
 
+# Update history
 history_file = DATA_DIR / "fuel-history.json"
 
 history = []
@@ -100,13 +102,21 @@ if history_file.exists():
     except Exception:
         history = []
 
+# Remove duplicate for today's date
 history = [x for x in history if x.get("updated") != fuel_data["updated"]]
+
+# Add today's prices
 history.append(fuel_data)
 
+# Sort by date
 history.sort(key=lambda x: x["updated"])
 
+# Keep only the latest 365 days
+history = history[-365:]
+
+# Save history
 with open(history_file, "w", encoding="utf-8") as f:
     json.dump(history, f, indent=2, ensure_ascii=False)
 
-print("Done")
+print("Fuel history updated successfully.")
 print(json.dumps(fuel_data, indent=2))
