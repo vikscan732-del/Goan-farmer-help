@@ -44,7 +44,7 @@ def scrape_fuel():
             "BC_ctl11_CheapestPrice",
             "BC_ctl11_HeigestPrice"
         ],
-        "lpg": [
+        "autogas": [
             "BC_ctl17_CheapestPrice",
             "BC_ctl17_HeigestPrice"
         ],
