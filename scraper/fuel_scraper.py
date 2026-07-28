@@ -10,10 +10,10 @@ HEADERS = {
 }
 
 URLS = {
-    "petrol": "https://www.mypetrolprice.com/petrol-price-in-india.aspx?stateId=11",
-    "diesel": "https://www.mypetrolprice.com/diesel-price-in-india.aspx?stateId=11",
-    "lpg": "https://www.mypetrolprice.com/lpg-price-in-india.aspx?stateId=11",
-    "cng": "https://www.mypetrolprice.com/cng-price-in-india.aspx?stateId=11"
+    "petrol": "https://www.mypetrolprice.com/11/Fuel-Prices-in-Goa",
+    "diesel": "https://www.mypetrolprice.com/11/Fuel-Prices-in-Goa",
+    "lpg": "https://www.mypetrolprice.com/11/Fuel-Prices-in-Goa",
+    "cng": "https://www.mypetrolprice.com/11/Fuel-Prices-in-Goa"
 }
 
 
