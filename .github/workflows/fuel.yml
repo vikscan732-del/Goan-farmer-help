@@ -31,11 +31,21 @@ jobs:
         run: |
           python scraper/fuel_scraper.py
 
+       - name: Download LPG HTML
+        run: |
+           python scraper/lpg_scraper.py   
+
       - name: Upload HTML
         uses: actions/upload-artifact@v4
         with:
           name: goa-html
           path: goa.html
+
+       - name: Upload LPG HTML
+         uses: actions/upload-artifact@v4
+         with:
+          name: lpg-html
+          path: lpg.html  
 
       - name: Commit Updated Data
         run: |
