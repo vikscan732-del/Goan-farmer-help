@@ -31,7 +31,7 @@ jobs:
         run: |
           python scraper/fuel_scraper.py
 
-      - name: Download LPG HTML
+      - name: Run LPG Scraper
         run: |
           python scraper/lpg_scraper.py
 
@@ -52,10 +52,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/fuel.json
-          git add data/fuel-history.json
-          git add data/lpg.json || true
+          git add data/*.json
 
-          git diff --cached --quiet || git commit -m "Update fuel data"
+          git diff --cached --quiet || git commit -m "Update fuel & LPG data"
 
           git push
