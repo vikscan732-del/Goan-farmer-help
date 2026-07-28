@@ -1,7 +1,17 @@
 {
   "updated": "2026-07-28",
-  "petrol": {},
-  "diesel": {},
-  "lpg": {},
-  "cng": {}
+  "petrol": {
+    "Margao": 103.93,
+    "Panjim": 104.06
+  },
+  "diesel": {
+    "Margao": 95.81,
+    "Panjim": 95.94
+  },
+  "lpg": {
+    "Panjim": 46.69
+  },
+  "cng": {
+    "Panjim": 94.5
+  }
 }
