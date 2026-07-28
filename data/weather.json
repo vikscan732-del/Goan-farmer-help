@@ -1,0 +1,47 @@
+{
+  "updated": "2026-07-28",
+  "forecast": [
+    {
+      "date": "2026-07-28",
+      "max": 27.4,
+      "min": 23.7,
+      "weather_code": 95
+    },
+    {
+      "date": "2026-07-29",
+      "max": 28.6,
+      "min": 24.9,
+      "weather_code": 95
+    },
+    {
+      "date": "2026-07-30",
+      "max": 28.3,
+      "min": 25.9,
+      "weather_code": 80
+    },
+    {
+      "date": "2026-07-31",
+      "max": 28.5,
+      "min": 24.2,
+      "weather_code": 96
+    },
+    {
+      "date": "2026-08-01",
+      "max": 26.6,
+      "min": 23.9,
+      "weather_code": 95
+    },
+    {
+      "date": "2026-08-02",
+      "max": 28.8,
+      "min": 24.1,
+      "weather_code": 81
+    },
+    {
+      "date": "2026-08-03",
+      "max": 27.4,
+      "min": 24.4,
+      "weather_code": 80
+    }
+  ]
+}
