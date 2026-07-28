@@ -24,26 +24,17 @@ def get_price(text):
     return None
 
 
-def scrape_fuel(url):
-    print("Downloading:", url)
+        cards = soup.find_all("div", class_="SF")
 
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
+    print("=" * 40)
+    print("URL:", url)
+    print("Cards found:", len(cards))
 
-    soup = BeautifulSoup(r.text, "lxml")
+    for i, card in enumerate(cards):
+        print(f"Card {i+1}:")
+        print(card.get_text(" ", strip=True))
 
-    result = {}
-
-    cards = soup.find_all("div", class_="SF")
-
-print("=" * 40)
-print("URL:", url)
-print("Cards found:", len(cards))
-
-for i, card in enumerate(cards):
-    print(f"Card {i+1}:")
-    print(card.get_text(" ", strip=True))
-print("=" * 40)
+    print("=" * 40)
 
     for card in cards:
 
