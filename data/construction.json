@@ -1,0 +1,1086 @@
+{
+  "updated": "2026-07-30 12:26:11",
+  "total_categories": 16,
+  "categories": [
+    {
+      "category": "ðï¸ Cement â IS 269",
+      "items": [
+        {
+          "name": "OPC 43 Grade Cement",
+          "price": "â¹454",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "OPC 53 Grade Cement",
+          "price": "â¹477",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "PPC Cement (Fly Ash)",
+          "price": "â¹432",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "PSC Cement (Slag)",
+          "price": "â¹442",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "White Cement",
+          "price": "â¹36",
+          "unit": "per kg"
+        },
+        {
+          "name": "UltraTech OPC 53 Grade",
+          "price": "â¹477",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "UltraTech PPC",
+          "price": "â¹445",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "UltraTech Super",
+          "price": "â¹487",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Shree Rockstrong PPC",
+          "price": "â¹408",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Shree Bangur OPC 53",
+          "price": "â¹433",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Ambuja Plus OPC 53",
+          "price": "â¹466",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Ambuja Compocem",
+          "price": "â¹424",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "ACC Gold",
+          "price": "â¹463",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "ACC F2R",
+          "price": "â¹427",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "JSW Portland",
+          "price": "â¹435",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Ramco Supergrade",
+          "price": "â¹443",
+          "unit": "per 50kg bag"
+        },
+        {
+          "name": "Dalmia DSP",
+          "price": "â¹424",
+          "unit": "per 50kg bag"
+        }
+      ]
+    },
+    {
+      "category": "ð© Steel & Rebar â IS 1786",
+      "items": [
+        {
+          "name": "TMT Bar 8mm (Fe500D)",
+          "price": "â¹72",
+          "unit": "per kg"
+        },
+        {
+          "name": "TMT Bar 10mm (Fe500D)",
+          "price": "â¹70",
+          "unit": "per kg"
+        },
+        {
+          "name": "TMT Bar 12mm (Fe500D)",
+          "price": "â¹68",
+          "unit": "per kg"
+        },
+        {
+          "name": "TMT Bar 16mm (Fe500D)",
+          "price": "â¹66",
+          "unit": "per kg"
+        },
+        {
+          "name": "TMT Bar 20mm (Fe500D)",
+          "price": "â¹66",
+          "unit": "per kg"
+        },
+        {
+          "name": "TMT Bar 25mm (Fe500D)",
+          "price": "â¹66",
+          "unit": "per kg"
+        },
+        {
+          "name": "Structural Steel (ISMB/ISMC)",
+          "price": "â¹76",
+          "unit": "per kg"
+        },
+        {
+          "name": "MS Plate (6-12mm)",
+          "price": "â¹73",
+          "unit": "per kg"
+        },
+        {
+          "name": "Binding Wire (18 gauge)",
+          "price": "â¹65",
+          "unit": "per kg"
+        },
+        {
+          "name": "Tata Tiscon Fe 500D 8mm",
+          "price": "â¹74",
+          "unit": "per kg"
+        },
+        {
+          "name": "Tata Tiscon Fe 500D 10mm",
+          "price": "â¹73",
+          "unit": "per kg"
+        },
+        {
+          "name": "Tata Tiscon Fe 500D 12mm",
+          "price": "â¹72",
+          "unit": "per kg"
+        },
+        {
+          "name": "Tata Tiscon Fe 500D 16mm",
+          "price": "â¹71",
+          "unit": "per kg"
+        },
+        {
+          "name": "JSW Neosteel 500D 10mm",
+          "price": "â¹72",
+          "unit": "per kg"
+        },
+        {
+          "name": "JSW Neosteel 500D 12mm",
+          "price": "â¹71",
+          "unit": "per kg"
+        },
+        {
+          "name": "JSW Neosteel 500D 16mm",
+          "price": "â¹69",
+          "unit": "per kg"
+        },
+        {
+          "name": "SAIL SeQR 10mm",
+          "price": "â¹69",
+          "unit": "per kg"
+        },
+        {
+          "name": "SAIL SeQR 12mm",
+          "price": "â¹68",
+          "unit": "per kg"
+        },
+        {
+          "name": "Vizag Steel 12mm",
+          "price": "â¹68",
+          "unit": "per kg"
+        },
+        {
+          "name": "Kamdhenu Nxt 10mm",
+          "price": "â¹68",
+          "unit": "per kg"
+        },
+        {
+          "name": "Kamdhenu Nxt 12mm",
+          "price": "â¹67",
+          "unit": "per kg"
+        },
+        {
+          "name": "Jindal Panther 10mm",
+          "price": "â¹72",
+          "unit": "per kg"
+        },
+        {
+          "name": "Jindal Panther 16mm",
+          "price": "â¹69",
+          "unit": "per kg"
+        }
+      ]
+    },
+    {
+      "category": "â°ï¸ Sand & Aggregates â",
+      "items": [
+        {
+          "name": "River Sand",
+          "price": "â¹2,627",
+          "unit": "per tonne"
+        },
+        {
+          "name": "M-Sand (Manufactured)",
+          "price": "â¹1,751",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Plastering Sand (P-Sand)",
+          "price": "â¹2,001",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Coarse Aggregate 20mm",
+          "price": "â¹1,367",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Coarse Aggregate 40mm",
+          "price": "â¹1,228",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Stone Dust / Crusher Dust",
+          "price": "â¹938",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Coarse Aggregate 10mm",
+          "price": "â¹1,422",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Boulder Soling (40mm+)",
+          "price": "â¹1,088",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Graded Sub-Base (GSB)",
+          "price": "â¹1,060",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Stone Chips 6mm",
+          "price": "â¹1,452",
+          "unit": "per tonne"
+        },
+        {
+          "name": "Kadappa Aggregate",
+          "price": "â¹1,951",
+          "unit": "per tonne"
+        }
+      ]
+    },
+    {
+      "category": "ð§± Ready-Mix Concrete â",
+      "items": [
+        {
+          "name": "Ready-Mix M20",
+          "price": "â¹5,523",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Ready-Mix M25",
+          "price": "â¹6,025",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Ready-Mix M30",
+          "price": "â¹6,528",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Ready-Mix M35",
+          "price": "â¹7,086",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Ready-Mix M40",
+          "price": "â¹7,531",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Lean Concrete M10 (PCC)",
+          "price": "â¹4,163",
+          "unit": "per mÂ³"
+        },
+        {
+          "name": "Plasticizer Admixture",
+          "price": "â¹100",
+          "unit": "per kg"
+        },
+        {
+          "name": "Superplasticizer Admixture",
+          "price": "â¹178",
+          "unit": "per kg"
+        }
+      ]
+    },
+    {
+      "category": "ð§± Bricks & Blocks â",
+      "items": [
+        {
+          "name": "Red Clay Brick (9Ã4Ã3\")",
+          "price": "â¹14",
+          "unit": "per piece"
+        },
+        {
+          "name": "Fly Ash Brick",
+          "price": "â¹7",
+          "unit": "per piece"
+        },
+        {
+          "name": "AAC Block (600Ã200Ã200)",
+          "price": "â¹56",
+          "unit": "per piece"
+        },
+        {
+          "name": "Solid Concrete Block (400Ã200Ã200)",
+          "price": "â¹48",
+          "unit": "per piece"
+        },
+        {
+          "name": "Hollow Concrete Block (400Ã200Ã200)",
+          "price": "â¹39",
+          "unit": "per piece"
+        },
+        {
+          "name": "Siporex AAC Block 4 inch",
+          "price": "â¹31",
+          "unit": "per piece"
+        },
+        {
+          "name": "Siporex AAC Block 6 inch",
+          "price": "â¹46",
+          "unit": "per piece"
+        },
+        {
+          "name": "Biltech AAC Block 6 inch",
+          "price": "â¹44",
+          "unit": "per piece"
+        },
+        {
+          "name": "Magicrete AAC Block 6 inch",
+          "price": "â¹43",
+          "unit": "per piece"
+        },
+        {
+          "name": "CLC Block 6 inch",
+          "price": "â¹42",
+          "unit": "per piece"
+        },
+        {
+          "name": "Paver Block 60mm",
+          "price": "â¹33",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Paver Block 80mm",
+          "price": "â¹45",
+          "unit": "per sqft"
+        }
+      ]
+    },
+    {
+      "category": "ð² Tiles & Flooring â",
+      "items": [
+        {
+          "name": "Vitrified Tiles (2Ã2 ft)",
+          "price": "â¹89",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Ceramic Wall Tiles",
+          "price": "â¹44",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Granite Slab (Polished)",
+          "price": "â¹154",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Marble Slab (Indian)",
+          "price": "â¹133",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Kota Stone",
+          "price": "â¹31",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Kajaria Vitrified Tile",
+          "price": "â¹69",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Kajaria Ceramic Wall Tile",
+          "price": "â¹46",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Somany Vitrified Tile",
+          "price": "â¹66",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Johnson Ceramic Wall Tile",
+          "price": "â¹45",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Asian Granito Vitrified",
+          "price": "â¹71",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Italian Marble (Statuario)",
+          "price": "â¹465",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Makrana Marble (White)",
+          "price": "â¹159",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Wooden Laminate Flooring",
+          "price": "â¹115",
+          "unit": "per sqft"
+        },
+        {
+          "name": "SPC Vinyl Flooring",
+          "price": "â¹101",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Cuddapah Black Stone",
+          "price": "â¹36",
+          "unit": "per sqft"
+        }
+      ]
+    },
+    {
+      "category": "ð¨ Paints & Finishes â IS 15489",
+      "items": [
+        {
+          "name": "Interior Emulsion Paint",
+          "price": "â¹298",
+          "unit": "per litre"
+        },
+        {
+          "name": "Exterior Emulsion Paint",
+          "price": "â¹348",
+          "unit": "per litre"
+        },
+        {
+          "name": "Wall Primer",
+          "price": "â¹124",
+          "unit": "per litre"
+        },
+        {
+          "name": "Wall Putty (White Cement)",
+          "price": "â¹26",
+          "unit": "per kg"
+        },
+        {
+          "name": "Enamel Paint (Metal/Wood)",
+          "price": "â¹336",
+          "unit": "per litre"
+        },
+        {
+          "name": "Asian Royale Luxury",
+          "price": "â¹626",
+          "unit": "per litre"
+        },
+        {
+          "name": "Asian Apex Ultima",
+          "price": "â¹557",
+          "unit": "per litre"
+        },
+        {
+          "name": "Asian Tractor Emulsion",
+          "price": "â¹224",
+          "unit": "per litre"
+        },
+        {
+          "name": "Asian Tractor Distemper",
+          "price": "â¹105",
+          "unit": "per litre"
+        },
+        {
+          "name": "Asian Apcolite Enamel",
+          "price": "â¹330",
+          "unit": "per litre"
+        },
+        {
+          "name": "Berger Silk",
+          "price": "â¹566",
+          "unit": "per litre"
+        },
+        {
+          "name": "Berger Weathercoat All Guard",
+          "price": "â¹435",
+          "unit": "per litre"
+        },
+        {
+          "name": "Berger Easy Clean",
+          "price": "â¹358",
+          "unit": "per litre"
+        },
+        {
+          "name": "Berger Bison Distemper",
+          "price": "â¹113",
+          "unit": "per litre"
+        },
+        {
+          "name": "Berger Luxol Hi-gloss",
+          "price": "â¹347",
+          "unit": "per litre"
+        },
+        {
+          "name": "Nerolac Excel Total",
+          "price": "â¹424",
+          "unit": "per litre"
+        },
+        {
+          "name": "Nerolac Impressions",
+          "price": "â¹537",
+          "unit": "per litre"
+        },
+        {
+          "name": "Nerolac Beauty Smooth",
+          "price": "â¹151",
+          "unit": "per litre"
+        },
+        {
+          "name": "Dulux Weathershield",
+          "price": "â¹462",
+          "unit": "per litre"
+        },
+        {
+          "name": "Dulux Velvet Touch",
+          "price": "â¹596",
+          "unit": "per litre"
+        },
+        {
+          "name": "Dulux Diamond Glo",
+          "price": "â¹447",
+          "unit": "per litre"
+        },
+        {
+          "name": "JK Wall Putty",
+          "price": "â¹27",
+          "unit": "per kg"
+        },
+        {
+          "name": "Birla Wall Putty",
+          "price": "â¹28",
+          "unit": "per kg"
+        }
+      ]
+    },
+    {
+      "category": "ðªµ Wood & Plywood â",
+      "items": [
+        {
+          "name": "Commercial Plywood (19mm)",
+          "price": "â¹78",
+          "unit": "per sqft"
+        },
+        {
+          "name": "BWR Plywood (19mm)",
+          "price": "â¹140",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Marine Plywood (19mm)",
+          "price": "â¹165",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Sunmica / Laminate Sheet",
+          "price": "â¹29",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Teak Wood (Sagwan)",
+          "price": "â¹3,985",
+          "unit": "per cft"
+        },
+        {
+          "name": "Greenply Commercial Ply",
+          "price": "â¹61",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Century Prowud",
+          "price": "â¹92",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Kitply Marine Plywood",
+          "price": "â¹120",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Flush Door (Commercial)",
+          "price": "â¹144",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Greenlam Laminate Sheet",
+          "price": "â¹35",
+          "unit": "per sqft"
+        },
+        {
+          "name": "MDF Board 19mm",
+          "price": "â¹37",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Blockboard 19mm",
+          "price": "â¹56",
+          "unit": "per sqft"
+        }
+      ]
+    },
+    {
+      "category": "ð¿ Plumbing â IS 2065",
+      "items": [
+        {
+          "name": "CPVC Pipe (1/2\" / 15mm)",
+          "price": "â¹61",
+          "unit": "per metre"
+        },
+        {
+          "name": "PVC Pipe (4\" / 110mm SWR)",
+          "price": "â¹206",
+          "unit": "per metre"
+        },
+        {
+          "name": "GI Pipe (1\" / 25mm)",
+          "price": "â¹275",
+          "unit": "per metre"
+        },
+        {
+          "name": "Plastic Water Tank (1000L)",
+          "price": "â¹7,166",
+          "unit": "per piece"
+        },
+        {
+          "name": "Astral CPVC Pipe 20mm (3/4\")",
+          "price": "â¹86",
+          "unit": "per metre"
+        },
+        {
+          "name": "Supreme CPVC Pipe 20mm",
+          "price": "â¹83",
+          "unit": "per metre"
+        },
+        {
+          "name": "Finolex uPVC Pipe 25mm",
+          "price": "â¹52",
+          "unit": "per metre"
+        },
+        {
+          "name": "Prince PPR Pipe 25mm",
+          "price": "â¹79",
+          "unit": "per metre"
+        },
+        {
+          "name": "GI Class-B Pipe 20mm",
+          "price": "â¹222",
+          "unit": "per metre"
+        },
+        {
+          "name": "Kohler Wall-Hung WC",
+          "price": "â¹32,245",
+          "unit": "per piece"
+        },
+        {
+          "name": "Hindware One-Piece WC",
+          "price": "â¹12,898",
+          "unit": "per piece"
+        },
+        {
+          "name": "Parryware WC",
+          "price": "â¹8,599",
+          "unit": "per piece"
+        },
+        {
+          "name": "Jaquar Basin Faucet Mid",
+          "price": "â¹5,733",
+          "unit": "per piece"
+        },
+        {
+          "name": "Jaquar Basin Faucet Premium",
+          "price": "â¹12,898",
+          "unit": "per piece"
+        },
+        {
+          "name": "Cera Wash Basin",
+          "price": "â¹3,725",
+          "unit": "per piece"
+        },
+        {
+          "name": "Sintex Water Tank 1000L",
+          "price": "â¹8,599",
+          "unit": "per piece"
+        }
+      ]
+    },
+    {
+      "category": "â¡ Electrical â IS 694",
+      "items": [
+        {
+          "name": "Electrical Wire (1.0 sq mm)",
+          "price": "â¹18",
+          "unit": "per metre"
+        },
+        {
+          "name": "Electrical Wire (2.5 sq mm)",
+          "price": "â¹36",
+          "unit": "per metre"
+        },
+        {
+          "name": "MCB Single Pole (16A)",
+          "price": "â¹189",
+          "unit": "per piece"
+        },
+        {
+          "name": "Modular Switch Plate (6M)",
+          "price": "â¹296",
+          "unit": "per piece"
+        },
+        {
+          "name": "LED Bulb (9W)",
+          "price": "â¹100",
+          "unit": "per piece"
+        },
+        {
+          "name": "Finolex Wire 1.5 sqmm",
+          "price": "â¹25",
+          "unit": "per metre"
+        },
+        {
+          "name": "Havells Wire 2.5 sqmm",
+          "price": "â¹40",
+          "unit": "per metre"
+        },
+        {
+          "name": "Polycab Wire 2.5 sqmm",
+          "price": "â¹41",
+          "unit": "per metre"
+        },
+        {
+          "name": "KEI Wire 2.5 sqmm",
+          "price": "â¹38",
+          "unit": "per metre"
+        },
+        {
+          "name": "Legrand Modular Switch",
+          "price": "â¹531",
+          "unit": "per piece"
+        },
+        {
+          "name": "Anchor Modular Switch",
+          "price": "â¹207",
+          "unit": "per piece"
+        },
+        {
+          "name": "Havells MCB 32A SP",
+          "price": "â¹285",
+          "unit": "per piece"
+        },
+        {
+          "name": "L&T MCB 32A SP",
+          "price": "â¹246",
+          "unit": "per piece"
+        },
+        {
+          "name": "Havells Ceiling Fan",
+          "price": "â¹6,491",
+          "unit": "per piece"
+        },
+        {
+          "name": "Philips LED Bulb 9W",
+          "price": "â¹141",
+          "unit": "per piece"
+        }
+      ]
+    },
+    {
+      "category": "ðª Interiors & Glass â",
+      "items": [
+        {
+          "name": "Plain Glass (5mm)",
+          "price": "â¹47",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Toughened Glass (12mm)",
+          "price": "â¹166",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Gypsum Board (12.5mm)",
+          "price": "â¹22",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Plaster of Paris (POP)",
+          "price": "â¹24",
+          "unit": "per kg"
+        },
+        {
+          "name": "Aluminium Section (Window)",
+          "price": "â¹372",
+          "unit": "per kg"
+        },
+        {
+          "name": "Toughened Glass 8mm",
+          "price": "â¹116",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Double-Glazed Unit (DGU)",
+          "price": "â¹265",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Jindal Aluminium Section",
+          "price": "â¹378",
+          "unit": "per kg"
+        },
+        {
+          "name": "Fenesta uPVC Profile",
+          "price": "â¹532",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Alstrong ACP Sheet",
+          "price": "â¹71",
+          "unit": "per sqft"
+        },
+        {
+          "name": "Saint-Gobain Gypsum Board",
+          "price": "â¹26",
+          "unit": "per sqft"
+        }
+      ]
+    },
+    {
+      "category": "ð§ Waterproofing â IS 3067",
+      "items": [
+        {
+          "name": "Waterproofing Chemical (Dr Fixit/SikaTop)",
+          "price": "â¹189",
+          "unit": "per litre"
+        },
+        {
+          "name": "APP Membrane (3mm)",
+          "price": "â¹134",
+          "unit": "per sqm"
+        },
+        {
+          "name": "Dr Fixit LW+ Integral",
+          "price": "â¹66",
+          "unit": "per kg"
+        },
+        {
+          "name": "Dr Fixit Pidiseal",
+          "price": "â¹227",
+          "unit": "per litre"
+        },
+        {
+          "name": "Dr Fixit Raincoat",
+          "price": "â¹573",
+          "unit": "per litre"
+        },
+        {
+          "name": "Fosroc Nitoproof 120",
+          "price": "â¹265",
+          "unit": "per litre"
+        },
+        {
+          "name": "Fosroc Brushbond RFH",
+          "price": "â¹128",
+          "unit": "per kg"
+        },
+        {
+          "name": "Sika Top Seal 107",
+          "price": "â¹153",
+          "unit": "per kg"
+        },
+        {
+          "name": "PU Liquid Membrane",
+          "price": "â¹416",
+          "unit": "per kg"
+        },
+        {
+          "name": "Bituminous Coating",
+          "price": "â¹114",
+          "unit": "per kg"
+        }
+      ]
+    },
+    {
+      "category": "ð· Labour Rates â",
+      "items": [
+        {
+          "name": "Skilled Mason",
+          "price": "â¹963",
+          "unit": "per day"
+        },
+        {
+          "name": "Unskilled Labour",
+          "price": "â¹662",
+          "unit": "per day"
+        },
+        {
+          "name": "Plumber",
+          "price": "â¹911",
+          "unit": "per day"
+        },
+        {
+          "name": "Electrician",
+          "price": "â¹911",
+          "unit": "per day"
+        },
+        {
+          "name": "Painter",
+          "price": "â¹795",
+          "unit": "per day"
+        },
+        {
+          "name": "Tile Layer",
+          "price": "â¹998",
+          "unit": "per day"
+        },
+        {
+          "name": "Carpenter",
+          "price": "â¹998",
+          "unit": "per day"
+        },
+        {
+          "name": "Bar Bender / Steel Fixer",
+          "price": "â¹939",
+          "unit": "per day"
+        }
+      ]
+    },
+    {
+      "category": "ð½ Sanitaryware â",
+      "items": [
+        {
+          "name": "Pedestal Wash Basin",
+          "price": "â¹3,213",
+          "unit": "per piece"
+        },
+        {
+          "name": "Wall-hung Wash Basin",
+          "price": "â¹2,295",
+          "unit": "per piece"
+        },
+        {
+          "name": "WC (Floor-mount, S-trap)",
+          "price": "â¹6,885",
+          "unit": "per piece"
+        },
+        {
+          "name": "WC (Wall-hung, with cistern)",
+          "price": "â¹12,394",
+          "unit": "per piece"
+        },
+        {
+          "name": "Stainless Steel Kitchen Sink",
+          "price": "â¹5,049",
+          "unit": "per piece"
+        },
+        {
+          "name": "Shower + Diverter Set",
+          "price": "â¹5,508",
+          "unit": "per set"
+        },
+        {
+          "name": "Hindware Pedestal Basin",
+          "price": "â¹4,453",
+          "unit": "per piece"
+        },
+        {
+          "name": "Cera Pedestal Basin",
+          "price": "â¹4,131",
+          "unit": "per piece"
+        },
+        {
+          "name": "Jaquar Recessed Wash Basin",
+          "price": "â¹6,426",
+          "unit": "per piece"
+        }
+      ]
+    },
+    {
+      "category": "ð Switches & Sockets â",
+      "items": [
+        {
+          "name": "Modular Switch 1-way 6A",
+          "price": "â¹110",
+          "unit": "per piece"
+        },
+        {
+          "name": "Modular Switch 2-way 16A",
+          "price": "â¹216",
+          "unit": "per piece"
+        },
+        {
+          "name": "Modular Socket 6/16A",
+          "price": "â¹198",
+          "unit": "per piece"
+        },
+        {
+          "name": "Modular Switch Plate (6-mod)",
+          "price": "â¹335",
+          "unit": "per piece"
+        },
+        {
+          "name": "Anchor Roma 1-way Switch",
+          "price": "â¹85",
+          "unit": "per piece"
+        },
+        {
+          "name": "Legrand Myrius Switch 6A",
+          "price": "â¹211",
+          "unit": "per piece"
+        }
+      ]
+    },
+    {
+      "category": "ðª Doors â",
+      "items": [
+        {
+          "name": "Flush Door 7Ã3 ft (Internal)",
+          "price": "â¹3,351",
+          "unit": "per piece"
+        },
+        {
+          "name": "WPC Door 7Ã3 ft (Bathroom)",
+          "price": "â¹3,379",
+          "unit": "per piece"
+        },
+        {
+          "name": "Teak Panel Door 7Ã3 ft",
+          "price": "â¹21,271",
+          "unit": "per piece"
+        },
+        {
+          "name": "Sal Wood Door Frame (Chowkat)",
+          "price": "â¹4,590",
+          "unit": "per piece"
+        }
+      ]
+    }
+  ]
+}
