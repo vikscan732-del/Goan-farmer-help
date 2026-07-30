@@ -3,38 +3,37 @@ from bs4 import BeautifulSoup
 
 URL = "https://infralens.in/prices/goa"
 
-headers = {
+HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-print("Downloading page...")
+print("Downloading construction prices...")
 
-r = requests.get(URL, headers=headers, timeout=30)
-r.raise_for_status()
+response = requests.get(URL, headers=HEADERS, timeout=30)
+response.raise_for_status()
 
-print("Status:", r.status_code)
+print("Status:", response.status_code)
 
+# Save page for debugging
 with open("construction.html", "w", encoding="utf-8") as f:
-    f.write(r.text)
+    f.write(response.text)
 
 print("Saved construction.html")
 
-soup = BeautifulSoup(r.text, "html.parser")
+soup = BeautifulSoup(response.text, "html.parser")
 
 categories = soup.select(".cp-cat")
 
-print(f"Found {len(categories)} categories")
+print("Categories found:", len(categories))
 
-for cat in categories:
-    title = cat.select_one(".cp-cat-head")
+for category in categories:
+    head = category.select_one(".cp-cat-head")
 
-    if title:
-        print("\n==========")
-        print(title.get_text(" ", strip=True))
+    if head:
+        print("\n========================")
+        print(head.get_text(" ", strip=True))
 
-    rows = cat.select(".cp-price-row")
-
-    for row in rows:
+    for row in category.select(".cp-price-row"):
         name = row.select_one(".cp-price-name")
         price = row.select_one(".cp-price-val span")
         unit = row.select_one(".cp-price-unit")
