@@ -1,5 +1,8 @@
+import os
+import json
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 URL = "https://infralens.in/prices/goa"
 
@@ -12,37 +15,47 @@ print("Downloading construction prices...")
 response = requests.get(URL, headers=HEADERS, timeout=30)
 response.raise_for_status()
 
-print("Status:", response.status_code)
-
-# Save page for debugging
-with open("construction.html", "w", encoding="utf-8") as f:
-    f.write(response.text)
-
-print("Saved construction.html")
-
 soup = BeautifulSoup(response.text, "html.parser")
 
-categories = soup.select(".cp-cat")
+categories = []
 
-print("Categories found:", len(categories))
+for cat in soup.select(".cp-cat"):
 
-for category in categories:
-    head = category.select_one(".cp-cat-head")
+    head = cat.select_one(".cp-cat-head")
+    if not head:
+        continue
 
-    if head:
-        print("\n========================")
-        print(head.get_text(" ", strip=True))
+    category_name = head.get_text(" ", strip=True)
 
-    for row in category.select(".cp-price-row"):
+    items = []
+
+    for row in cat.select(".cp-price-row"):
+
         name = row.select_one(".cp-price-name")
         price = row.select_one(".cp-price-val span")
         unit = row.select_one(".cp-price-unit")
 
-        print(
-            "-",
-            name.get_text(strip=True) if name else "",
-            "|",
-            price.get_text(strip=True) if price else "",
-            "|",
-            unit.get_text(strip=True) if unit else ""
-        )
+        items.append({
+            "name": name.get_text(strip=True) if name else "",
+            "price": price.get_text(strip=True) if price else "",
+            "unit": unit.get_text(strip=True) if unit else ""
+        })
+
+    categories.append({
+        "category": category_name,
+        "items": items
+    })
+
+os.makedirs("data", exist_ok=True)
+
+output = {
+    "updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "total_categories": len(categories),
+    "categories": categories
+}
+
+with open("data/construction.json", "w", encoding="utf-8") as f:
+    json.dump(output, f, indent=2, ensure_ascii=False)
+
+print("Saved data/construction.json")
+print("Categories:", len(categories))
