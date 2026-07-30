@@ -150,6 +150,13 @@ for veg in prices:
             "price": price
         })
 
+
+# If no vegetables were detected, keep the previous files
+if len(prices) == 0:
+    print("⚠️ No vegetable prices detected.")
+    print("⚠️ Keeping previous prices.json and history.json.")
+    exit(0)
+
 # Save history
 with open("history.json", "w", encoding="utf-8") as f:
     json.dump(history, f, indent=2, ensure_ascii=False)
