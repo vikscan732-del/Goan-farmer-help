@@ -31,18 +31,22 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr
 
-      # -------- Goa Bagayatdar --------
+       -------- Goa Bagayatdar --------
       - name: Run Goa Bagayatdar Scraper
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python scraper.py
 
-      # -------- Instagram GSHCL --------
+       -------- Instagram GSHCL --------
       - name: Download Latest Price Image
         run: python test_api.py
 
       - name: Extract Prices from Image
         run: python ocr_prices.py
+
+
+      - name: Run construction scraper
+        run: python construction_scraper.py
 
       - name: Commit Updated Files
         run: |
