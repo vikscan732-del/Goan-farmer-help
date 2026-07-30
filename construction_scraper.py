@@ -59,3 +59,8 @@ with open("data/construction.json", "w", encoding="utf-8") as f:
 
 print("Saved data/construction.json")
 print("Categories:", len(categories))
+
+if len(categories) == 0:
+    print("⚠️ No construction materials found.")
+    print("⚠️ Keeping existing construction.json")
+    exit(0)
