@@ -1,118 +1,66 @@
-[
+{
+  "priceDate": "03 Aug 2026",
+  "updatedAt": "06:56 AM",
+  "vegetables": [
     {
-        "name": "Supari Old  / सुपारी जुनी",
-        "price": 414.0
+      "name": "Bhendi",
+      "emoji": "🌿",
+      "price": 36,
+      "unit": "kg"
     },
     {
-        "name": "Supari Raas Old / सुपारी रास जुनी",
-        "price": 404.0
+      "name": "Cabbage",
+      "emoji": "🥬",
+      "price": 28,
+      "unit": "kg"
     },
     {
-        "name": "Safed Khoka Old / सफेद खोका जुना",
-        "price": 368.0
+      "name": "Carrot",
+      "emoji": "🥕",
+      "price": 44,
+      "unit": "kg"
     },
     {
-        "name": "Lal Khoka Old / लाल खोका जुना",
-        "price": 358.0
+      "name": "Cauliflower",
+      "emoji": "🥦",
+      "price": 33,
+      "unit": "kg"
     },
     {
-        "name": "Vench Old  / वेच जुना",
-        "price": 302.0
+      "name": "Chilli",
+      "emoji": "🌶️",
+      "price": 50,
+      "unit": "kg"
     },
     {
-        "name": "Kharad Old / खरड जुना",
-        "price": 302.0
+      "name": "Cluster Beans",
+      "emoji": "🫛",
+      "price": 47,
+      "unit": "kg"
     },
     {
-        "name": "Tukada Old / तुकडा जुना",
-        "price": 334.0
+      "name": "French Beans",
+      "emoji": "🫛",
+      "price": 75,
+      "unit": "kg"
     },
     {
-        "name": "Bad Vench Old / बादवेच जुना",
-        "price": 208.0
+      "name": "Onion",
+      "emoji": "🧅",
+      "price": 37,
+      "unit": "kg"
     },
     {
-        "name": "Bad Vench Chura (Old) / बादवेच (चुरा) जुना",
-        "price": 106.0
+      "name": "Potato",
+      "emoji": "🥔",
+      "price": 28,
+      "unit": "kg"
     },
     {
-        "name": "Miri  / मिरी",
-        "price": 658.0
-    },
-    {
-        "name": "Safed Miri / सफेद मिरी",
-        "price": 754.0
-    },
-    {
-        "name": "Jayfal  / जायफळ फोडलेले",
-        "price": 870.0
-    },
-    {
-        "name": "Jaaypatri / जायपत्री",
-        "price": 1950.0
-    },
-    {
-        "name": "Dalchini / दालचिनी",
-        "price": 250.0
-    },
-    {
-        "name": "Tamalpatra / तमालपत्र",
-        "price": 100.0
-    },
-    {
-        "name": "Kokum Ghul / कोकम घूल",
-        "price": 300.0
-    },
-    {
-        "name": "Kokum Be / कोकम बी",
-        "price": 21.0
-    },
-    {
-        "name": "Khobra Kusak / खोबरे कुसक",
-        "price": 84.0
-    },
-    {
-        "name": "Coconut Raas / नारळ राशी",
-        "price": 1200019000.0
-    },
-    {
-        "name": "Coconut Raas (Small) / नारळ रास - लहान",
-        "price": 80009000.0
-    },
-    {
-        "name": "Coconut 80/Bag / नारळ ८० भ.",
-        "price": 33000.0
-    },
-    {
-        "name": "Coconut 90/Bag / नारळ ९० भ.",
-        "price": 31000.0
-    },
-    {
-        "name": "Coconut 100/Bag / नारळ १०० भ.",
-        "price": 30000.0
-    },
-    {
-        "name": "Coconut 120/Bag / नारळ १२० भ.",
-        "price": 28000.0
-    },
-    {
-        "name": "Coconut 180/Bag / नारळ १८० भ.",
-        "price": 25000.0
-    },
-    {
-        "name": "Coconut 250/Bag / नारळ २५० भ.",
-        "price": 20000.0
-    },
-    {
-        "name": "Coconut 300/Bag / नारळ ३०० भ.",
-        "price": 15500.0
-    },
-    {
-        "name": "Coconut 400/Bag / नारळ ४०० भ.",
-        "price": 10500.0
-    },
-    {
-        "name": "Sollela Naral / सोललेला नारळ",
-        "price": 40.0
+      "name": "Tomato",
+      "emoji": "🍅",
+      "price": 29,
+      "unit": "kg"
     }
-]
+  ]
+}
