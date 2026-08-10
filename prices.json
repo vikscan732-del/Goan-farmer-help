@@ -1,6 +1,6 @@
 {
-  "priceDate": "09 Aug 2026",
-  "updatedAt": "05:00 AM",
+  "priceDate": "10 Aug 2026",
+  "updatedAt": "05:23 AM",
   "vegetables": [
     {
       "name": "Bhendi",
@@ -29,7 +29,7 @@
     {
       "name": "Chilli",
       "emoji": "🌶️",
-      "price": 43,
+      "price": 45,
       "unit": "kg"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Tomato",
       "emoji": "🍅",
-      "price": 29,
+      "price": 30,
       "unit": "kg"
     }
   ]
