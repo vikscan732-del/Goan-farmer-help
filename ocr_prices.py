@@ -33,7 +33,14 @@ FIXES = {
     "Flowers/pc": "Cauliflower",
     "Flower/pc": "Cauliflower",
     "Bhindi": "Bhendi",
-    "Capsicum ": "Capsicum"
+    "Capsicum ": "Capsicum",
+    "Onion ": "Onion",
+    "Potato ": "Potato",
+    "Tomato ": "Tomato",
+    "Brinjal ": "Brinjal",
+    "Cabbage ": "Cabbage",
+    "Carrot ": "Carrot",
+    "Chilli ": "Chilli"
 }
 
 # Emoji map
@@ -117,7 +124,7 @@ output = {
 
 today = now.strftime("%Y-%m-%d")
 
-# Load history
+# ── Load history ──
 history = {}
 
 if os.path.exists("history.json"):
@@ -127,9 +134,8 @@ if os.path.exists("history.json"):
     except:
         history = {}
 
-# Update history
+# ── Update history ──
 for veg in prices:
-
     name = veg["name"]
     price = veg["price"]
 
@@ -150,18 +156,56 @@ for veg in prices:
             "price": price
         })
 
+# ── Also update vegetables-history.json (for the website) ──
+vegetable_history = {}
 
-# If no vegetables were detected, keep the previous files
+if os.path.exists("vegetables-history.json"):
+    try:
+        with open("vegetables-history.json", "r", encoding="utf-8") as f:
+            vegetable_history = json.load(f)
+    except:
+        vegetable_history = {}
+
+# If vegetable_history is empty, copy from history
+if not vegetable_history or len(vegetable_history) == 0:
+    vegetable_history = history
+else:
+    # Update vegetable_history with new prices
+    for veg in prices:
+        name = veg["name"]
+        price = veg["price"]
+
+        if name not in vegetable_history:
+            vegetable_history[name] = []
+
+        found = False
+        for item in vegetable_history[name]:
+            if item["date"] == today:
+                item["price"] = price
+                found = True
+                break
+
+        if not found:
+            vegetable_history[name].append({
+                "date": today,
+                "price": price
+            })
+
+# ── If no vegetables were detected, keep previous files ──
 if len(prices) == 0:
     print("⚠️ No vegetable prices detected.")
     print("⚠️ Keeping previous prices.json and history.json.")
     exit(0)
 
-# Save history
+# ── Save history.json (for the scraper) ──
 with open("history.json", "w", encoding="utf-8") as f:
     json.dump(history, f, indent=2, ensure_ascii=False)
 
-# Save today's prices
+# ── Save vegetables-history.json (for the website) ──
+with open("vegetables-history.json", "w", encoding="utf-8") as f:
+    json.dump(vegetable_history, f, indent=2, ensure_ascii=False)
+
+# ── Save today's prices ──
 with open("prices.json", "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
@@ -170,4 +214,5 @@ print(json.dumps(output, indent=2, ensure_ascii=False))
 
 print(f"\n✅ Saved {len(prices)} vegetables.")
 print("✅ Updated history.json")
+print("✅ Updated vegetables-history.json (for website)")
 print("✅ Updated prices.json")
