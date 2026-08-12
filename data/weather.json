@@ -1,54 +1,54 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "forecast": [
     {
-      "date": "2026-08-11",
-      "max": 26.9,
-      "min": 24.4,
-      "weather": "Moderate Rain Showers",
-      "weather_code": 81
-    },
-    {
       "date": "2026-08-12",
-      "max": 27.2,
+      "max": 27.9,
       "min": 24.3,
       "weather": "Moderate Rain Showers",
       "weather_code": 81
     },
     {
       "date": "2026-08-13",
-      "max": 27.4,
-      "min": 24.4,
-      "weather": "Moderate Rain Showers",
-      "weather_code": 81
+      "max": 27.3,
+      "min": 24.2,
+      "weather": "Light Rain Showers",
+      "weather_code": 80
     },
     {
       "date": "2026-08-14",
-      "max": 27.8,
-      "min": 24.1,
+      "max": 27.6,
+      "min": 23.8,
       "weather": "Light Rain Showers",
       "weather_code": 80
     },
     {
       "date": "2026-08-15",
-      "max": 28.0,
+      "max": 28.4,
       "min": 24.1,
-      "weather": "Heavy Drizzle",
-      "weather_code": 55
-    },
-    {
-      "date": "2026-08-16",
-      "max": 28.5,
-      "min": 23.9,
       "weather": "Light Rain Showers",
       "weather_code": 80
     },
     {
+      "date": "2026-08-16",
+      "max": 28.8,
+      "min": 23.9,
+      "weather": "Moderate Drizzle",
+      "weather_code": 53
+    },
+    {
       "date": "2026-08-17",
-      "max": 28.6,
-      "min": 24.6,
-      "weather": "Heavy Drizzle",
-      "weather_code": 55
+      "max": 27.3,
+      "min": 24.2,
+      "weather": "Moderate Rain Showers",
+      "weather_code": 81
+    },
+    {
+      "date": "2026-08-18",
+      "max": 26.4,
+      "min": 24.1,
+      "weather": "Moderate Drizzle",
+      "weather_code": 53
     }
   ]
 }
