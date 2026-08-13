@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 05:28:36",
+  "updated": "2026-08-13 05:38:03",
   "total_categories": 16,
   "categories": [
     {
@@ -27,7 +27,7 @@
         },
         {
           "name": "White Cement",
-          "price": "₹36",
+          "price": "₹26",
           "unit": "per kg"
         },
         {
@@ -192,22 +192,22 @@
         },
         {
           "name": "Kamdhenu Nxt 10mm",
-          "price": "₹68",
+          "price": "₹64",
           "unit": "per kg"
         },
         {
           "name": "Kamdhenu Nxt 12mm",
-          "price": "₹67",
+          "price": "₹63",
           "unit": "per kg"
         },
         {
           "name": "Jindal Panther 10mm",
-          "price": "₹72",
+          "price": "₹65",
           "unit": "per kg"
         },
         {
           "name": "Jindal Panther 16mm",
-          "price": "₹69",
+          "price": "₹64",
           "unit": "per kg"
         }
       ]
@@ -302,7 +302,7 @@
         },
         {
           "name": "Lean Concrete M10 (PCC)",
-          "price": "₹4,163",
+          "price": "₹4,520",
           "unit": "per m³"
         },
         {
@@ -332,27 +332,27 @@
         },
         {
           "name": "AAC Block (600×200×200)",
-          "price": "₹56",
+          "price": "₹86",
           "unit": "per piece"
         },
         {
           "name": "Solid Concrete Block (400×200×200)",
-          "price": "₹48",
+          "price": "₹57",
           "unit": "per piece"
         },
         {
           "name": "Hollow Concrete Block (400×200×200)",
-          "price": "₹39",
+          "price": "₹51",
           "unit": "per piece"
         },
         {
           "name": "Siporex AAC Block 4 inch",
-          "price": "₹31",
+          "price": "₹55",
           "unit": "per piece"
         },
         {
           "name": "Siporex AAC Block 6 inch",
-          "price": "₹46",
+          "price": "₹75",
           "unit": "per piece"
         },
         {
@@ -362,7 +362,7 @@
         },
         {
           "name": "Magicrete AAC Block 6 inch",
-          "price": "₹43",
+          "price": "₹81",
           "unit": "per piece"
         },
         {
@@ -372,12 +372,12 @@
         },
         {
           "name": "Paver Block 60mm",
-          "price": "₹33",
+          "price": "₹49",
           "unit": "per sqft"
         },
         {
           "name": "Paver Block 80mm",
-          "price": "₹45",
+          "price": "₹57",
           "unit": "per sqft"
         }
       ]
@@ -417,7 +417,7 @@
         },
         {
           "name": "Kajaria Ceramic Wall Tile",
-          "price": "₹46",
+          "price": "₹54",
           "unit": "per sqft"
         },
         {
@@ -427,7 +427,7 @@
         },
         {
           "name": "Johnson Ceramic Wall Tile",
-          "price": "₹45",
+          "price": "₹51",
           "unit": "per sqft"
         },
         {
@@ -437,12 +437,12 @@
         },
         {
           "name": "Italian Marble (Statuario)",
-          "price": "₹465",
+          "price": "₹699",
           "unit": "per sqft"
         },
         {
           "name": "Makrana Marble (White)",
-          "price": "₹159",
+          "price": "₹392",
           "unit": "per sqft"
         },
         {
@@ -452,12 +452,12 @@
         },
         {
           "name": "SPC Vinyl Flooring",
-          "price": "₹101",
+          "price": "₹136",
           "unit": "per sqft"
         },
         {
           "name": "Cuddapah Black Stone",
-          "price": "₹36",
+          "price": "₹45",
           "unit": "per sqft"
         }
       ]
@@ -497,7 +497,7 @@
         },
         {
           "name": "Asian Apex Ultima",
-          "price": "₹557",
+          "price": "₹614",
           "unit": "per litre"
         },
         {
@@ -557,12 +557,12 @@
         },
         {
           "name": "Dulux Weathershield",
-          "price": "₹462",
+          "price": "₹281",
           "unit": "per litre"
         },
         {
           "name": "Dulux Velvet Touch",
-          "price": "₹596",
+          "price": "₹513",
           "unit": "per litre"
         },
         {
@@ -632,17 +632,17 @@
         },
         {
           "name": "Greenlam Laminate Sheet",
-          "price": "₹35",
+          "price": "₹48",
           "unit": "per sqft"
         },
         {
           "name": "MDF Board 19mm",
-          "price": "₹37",
+          "price": "₹68",
           "unit": "per sqft"
         },
         {
           "name": "Blockboard 19mm",
-          "price": "₹56",
+          "price": "₹98",
           "unit": "per sqft"
         }
       ]
@@ -657,7 +657,7 @@
         },
         {
           "name": "PVC Pipe (4\" / 110mm SWR)",
-          "price": "₹206",
+          "price": "₹368",
           "unit": "per metre"
         },
         {
@@ -707,7 +707,7 @@
         },
         {
           "name": "Parryware WC",
-          "price": "₹8,599",
+          "price": "₹10,012",
           "unit": "per piece"
         },
         {
@@ -737,12 +737,12 @@
       "items": [
         {
           "name": "Electrical Wire (1.0 sq mm)",
-          "price": "₹18",
+          "price": "₹25",
           "unit": "per metre"
         },
         {
           "name": "Electrical Wire (2.5 sq mm)",
-          "price": "₹36",
+          "price": "₹61",
           "unit": "per metre"
         },
         {
@@ -762,22 +762,22 @@
         },
         {
           "name": "Finolex Wire 1.5 sqmm",
-          "price": "₹25",
+          "price": "₹39",
           "unit": "per metre"
         },
         {
           "name": "Havells Wire 2.5 sqmm",
-          "price": "₹40",
+          "price": "₹66",
           "unit": "per metre"
         },
         {
           "name": "Polycab Wire 2.5 sqmm",
-          "price": "₹41",
+          "price": "₹80",
           "unit": "per metre"
         },
         {
           "name": "KEI Wire 2.5 sqmm",
-          "price": "₹38",
+          "price": "₹49",
           "unit": "per metre"
         },
         {
@@ -832,7 +832,7 @@
         },
         {
           "name": "Plaster of Paris (POP)",
-          "price": "₹24",
+          "price": "₹18",
           "unit": "per kg"
         },
         {
@@ -847,7 +847,7 @@
         },
         {
           "name": "Double-Glazed Unit (DGU)",
-          "price": "₹265",
+          "price": "₹301",
           "unit": "per sqft"
         },
         {
@@ -857,12 +857,12 @@
         },
         {
           "name": "Fenesta uPVC Profile",
-          "price": "₹532",
+          "price": "₹728",
           "unit": "per sqft"
         },
         {
           "name": "Alstrong ACP Sheet",
-          "price": "₹71",
+          "price": "₹95",
           "unit": "per sqft"
         },
         {
@@ -882,12 +882,12 @@
         },
         {
           "name": "APP Membrane (3mm)",
-          "price": "₹134",
+          "price": "₹173",
           "unit": "per sqm"
         },
         {
           "name": "Dr Fixit LW+ Integral",
-          "price": "₹66",
+          "price": "₹124",
           "unit": "per kg"
         },
         {
@@ -907,7 +907,7 @@
         },
         {
           "name": "Fosroc Brushbond RFH",
-          "price": "₹128",
+          "price": "₹111",
           "unit": "per kg"
         },
         {
@@ -1037,7 +1037,7 @@
         },
         {
           "name": "Modular Socket 6/16A",
-          "price": "₹198",
+          "price": "₹248",
           "unit": "per piece"
         },
         {
