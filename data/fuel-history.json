@@ -355,5 +355,22 @@
     "cng": {
       "Panjim": 94.5
     }
+  },
+  {
+    "updated": "2026-08-17",
+    "petrol": {
+      "Margao": 103.93,
+      "Panjim": 104.06
+    },
+    "diesel": {
+      "Margao": 95.81,
+      "Panjim": 95.94
+    },
+    "autogas": {
+      "Panjim": 46.69
+    },
+    "cng": {
+      "Panjim": 94.5
+    }
   }
 ]
