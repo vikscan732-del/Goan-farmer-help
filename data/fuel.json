@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "petrol": {
     "Margao": 103.93,
     "Panjim": 104.06
@@ -12,6 +12,6 @@
     "Panjim": 46.69
   },
   "cng": {
-    "Panjim": 94.5
+    "Panjim": 98.0
   }
 }
