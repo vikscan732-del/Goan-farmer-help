@@ -1,11 +1,11 @@
 {
-  "priceDate": "26 Aug 2026",
-  "updatedAt": "04:35 AM",
+  "priceDate": "27 Aug 2026",
+  "updatedAt": "02:57 PM",
   "vegetables": [
     {
       "name": "Bhendi",
       "emoji": "🌿",
-      "price": 27,
+      "price": 24,
       "unit": "kg"
     },
     {
@@ -29,7 +29,7 @@
     {
       "name": "Chilli",
       "emoji": "🌶️",
-      "price": 42,
+      "price": 45,
       "unit": "kg"
     },
     {
@@ -47,7 +47,7 @@
     {
       "name": "Onion",
       "emoji": "🧅",
-      "price": 47,
+      "price": 54,
       "unit": "kg"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Tomato",
       "emoji": "🍅",
-      "price": 22,
+      "price": 23,
       "unit": "kg"
     }
   ]
