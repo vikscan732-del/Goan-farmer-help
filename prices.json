@@ -1,11 +1,11 @@
 {
-  "priceDate": "09 Sep 2026",
-  "updatedAt": "08:34 AM",
+  "priceDate": "10 Sep 2026",
+  "updatedAt": "08:36 AM",
   "vegetables": [
     {
       "name": "Bhendi",
       "emoji": "🌿",
-      "price": 37,
+      "price": 36,
       "unit": "kg"
     },
     {
@@ -17,13 +17,13 @@
     {
       "name": "Carrot",
       "emoji": "🥕",
-      "price": 45,
+      "price": 46,
       "unit": "kg"
     },
     {
       "name": "Cauliflower",
       "emoji": "🥦",
-      "price": 30,
+      "price": 32,
       "unit": "kg"
     },
     {
@@ -47,7 +47,7 @@
     {
       "name": "Onion",
       "emoji": "🧅",
-      "price": 64,
+      "price": 59,
       "unit": "kg"
     },
     {
