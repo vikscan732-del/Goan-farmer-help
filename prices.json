@@ -1,6 +1,6 @@
 {
-  "priceDate": "08 Oct 2026",
-  "updatedAt": "11:07 AM",
+  "priceDate": "09 Oct 2026",
+  "updatedAt": "11:06 AM",
   "vegetables": [
     {
       "name": "Bhendi",
@@ -35,7 +35,7 @@
     {
       "name": "Cluster Beans",
       "emoji": "🫛",
-      "price": 57,
+      "price": 55,
       "unit": "kg"
     },
     {
