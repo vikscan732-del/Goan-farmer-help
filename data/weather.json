@@ -1,54 +1,54 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "forecast": [
     {
-      "date": "2026-10-20",
-      "max": 32.6,
-      "min": 25.6,
-      "weather": "Fog",
-      "weather_code": 45
-    },
-    {
       "date": "2026-10-21",
-      "max": 33.7,
-      "min": 24.1,
-      "weather": "Fog",
-      "weather_code": 45
+      "max": 33.9,
+      "min": 24.8,
+      "weather": "Cloudy",
+      "weather_code": 3
     },
     {
       "date": "2026-10-22",
-      "max": 32.4,
-      "min": 25.7,
-      "weather": "Light Drizzle",
-      "weather_code": 51
+      "max": 33.5,
+      "min": 25.4,
+      "weather": "Thunderstorm",
+      "weather_code": 95
     },
     {
       "date": "2026-10-23",
-      "max": 31.5,
+      "max": 30.9,
       "min": 24.9,
       "weather": "Thunderstorm",
       "weather_code": 95
     },
     {
       "date": "2026-10-24",
-      "max": 30.5,
-      "min": 24.4,
+      "max": 29.8,
+      "min": 24.7,
       "weather": "Thunderstorm",
       "weather_code": 95
     },
     {
       "date": "2026-10-25",
-      "max": 31.1,
-      "min": 25.6,
-      "weather": "Light Drizzle",
-      "weather_code": 51
+      "max": 30.6,
+      "min": 25.0,
+      "weather": "Thunderstorm",
+      "weather_code": 95
     },
     {
       "date": "2026-10-26",
-      "max": 33.7,
-      "min": 24.3,
-      "weather": "Cloudy",
-      "weather_code": 3
+      "max": 32.2,
+      "min": 24.8,
+      "weather": "Fog",
+      "weather_code": 45
+    },
+    {
+      "date": "2026-10-27",
+      "max": 32.5,
+      "min": 23.8,
+      "weather": "Fog",
+      "weather_code": 45
     }
   ]
 }
