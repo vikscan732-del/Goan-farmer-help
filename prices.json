@@ -1,11 +1,11 @@
 {
-  "priceDate": "20 Oct 2026",
-  "updatedAt": "09:05 AM",
+  "priceDate": "22 Oct 2026",
+  "updatedAt": "09:07 AM",
   "vegetables": [
     {
       "name": "Bhendi",
       "emoji": "🌿",
-      "price": 48,
+      "price": 38,
       "unit": "kg"
     },
     {
@@ -17,7 +17,7 @@
     {
       "name": "Carrot",
       "emoji": "🥕",
-      "price": 49,
+      "price": 47,
       "unit": "kg"
     },
     {
@@ -29,25 +29,25 @@
     {
       "name": "Chilli",
       "emoji": "🌶️",
-      "price": 64,
+      "price": 70,
       "unit": "kg"
     },
     {
       "name": "Cluster Beans",
       "emoji": "🫛",
-      "price": 32,
+      "price": 37,
       "unit": "kg"
     },
     {
       "name": "French Beans",
       "emoji": "🫛",
-      "price": 66,
+      "price": 72,
       "unit": "kg"
     },
     {
       "name": "Onion",
       "emoji": "🧅",
-      "price": 57,
+      "price": 56,
       "unit": "kg"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Tomato",
       "emoji": "🍅",
-      "price": 26,
+      "price": 24,
       "unit": "kg"
     }
   ]
