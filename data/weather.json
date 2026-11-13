@@ -1,54 +1,54 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "forecast": [
     {
-      "date": "2026-11-12",
-      "max": 35.1,
-      "min": 21.8,
-      "weather": "Cloudy",
-      "weather_code": 3
-    },
-    {
       "date": "2026-11-13",
-      "max": 34.2,
+      "max": 34.3,
       "min": 21.7,
       "weather": "Cloudy",
       "weather_code": 3
     },
     {
       "date": "2026-11-14",
-      "max": 34.0,
+      "max": 34.2,
       "min": 21.7,
       "weather": "Cloudy",
       "weather_code": 3
     },
     {
       "date": "2026-11-15",
-      "max": 32.5,
-      "min": 22.3,
+      "max": 32.9,
+      "min": 22.5,
       "weather": "Cloudy",
       "weather_code": 3
     },
     {
       "date": "2026-11-16",
-      "max": 33.3,
-      "min": 21.4,
-      "weather": "Clear Sky",
-      "weather_code": 0
+      "max": 32.0,
+      "min": 21.9,
+      "weather": "Cloudy",
+      "weather_code": 3
     },
     {
       "date": "2026-11-17",
-      "max": 31.8,
+      "max": 32.9,
       "min": 21.5,
-      "weather": "Clear Sky",
-      "weather_code": 0
+      "weather": "Cloudy",
+      "weather_code": 3
     },
     {
       "date": "2026-11-18",
-      "max": 34.9,
-      "min": 21.1,
-      "weather": "Partly Cloudy",
-      "weather_code": 2
+      "max": 35.6,
+      "min": 21.5,
+      "weather": "Cloudy",
+      "weather_code": 3
+    },
+    {
+      "date": "2026-11-19",
+      "max": 35.2,
+      "min": 22.0,
+      "weather": "Cloudy",
+      "weather_code": 3
     }
   ]
 }
